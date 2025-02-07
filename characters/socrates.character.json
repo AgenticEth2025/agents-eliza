@@ -8,7 +8,7 @@
             "model": "en_GB-danny-low"
         },
         "secrets": {
-            "DISCORD_API_TOKEN": "MTMzNzQ2ODgzMTk2MTk3Mjg4OQ.G3YJg2.-YwkVp_d0ckFhklilgi2_9sf_MI4ZpDjVuoBw8"
+            "DISCORD_API_TOKEN": "${DISCORD_API_TOKEN}"
         },
         "discord": {
             "channels": ["channel-id"],
