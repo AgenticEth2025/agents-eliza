@@ -38,8 +38,27 @@ export class DiscordClient extends EventEmitter {
 
     constructor(runtime: IAgentRuntime) {
         super();
-
+        
         this.apiToken = runtime.getSetting("DISCORD_API_TOKEN") as string;
+        //Addition RE Start
+        // Get the token using runtime's getSecret
+        const token = this.character?.settings?.secrets?.DISCORD_API_TOKEN;
+
+        // If it's a variable reference (${...}), resolve it from environment
+        // if (token?.startsWith('${') && token?.endsWith('}')) {
+        //     const envVarName = token.slice(2, -1);
+        //     this.apiToken = process.env[envVarName] || '';
+        // }
+        
+        //elizaLogger.debug('Character Token Info:', {
+        //    hasToken: !!token,
+        //    tokenType: typeof token,
+        //    tokenLength: token ? token.length : 0,
+        //    tokenFirstChars: token ? `${token.substring(0, 4)}...` : 'none'
+        //});
+        
+        //Addition RE END
+
         this.client = new Client({
             intents: [
                 GatewayIntentBits.Guilds,

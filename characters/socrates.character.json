@@ -7,13 +7,12 @@
         "voice": {
             "model": "en_GB-danny-low"
         },
-        "secrets": {
-            "DISCORD_API_TOKEN": "MTMzNzQ2ODgzMTk2MTk3Mjg4OQ.G3YJg2.-YwkVp_d0ckFhklilgi2_9sf_MI4ZpDjVuoBw8"
-        },
+
         "discord": {
             "channels": ["channel-id"],
             "autoReply": false,
             "replyMode": "mention",
+            "replyDelay": 5000,
             "commands": {
                 "analyze": {
                     "description": "Analyze a governance proposal",
