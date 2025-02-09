@@ -15,6 +15,7 @@
             "channels": ["channel-id"],
             "autoReply": false,
             "replyMode": "mention",
+            "replyDelay": 5000,
             "commands": {
                 "analyze": {
                     "description": "Analyze a governance proposal",

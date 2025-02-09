@@ -7,13 +7,11 @@
         "voice": {
             "model": "en_GB-danny-low"
         },
-        "secrets": {
-            "DISCORD_API_TOKEN": "${DISCORD_API_TOKEN}"
-        },
-        "discord": {
+    "discord": {
             "channels": ["channel-id"],
             "autoReply": false,
             "replyMode": "mention",
+            "replyDelay": 5000,
             "commands": {
                 "analyze": {
                     "description": "Analyze a governance proposal",
@@ -26,7 +24,7 @@
             }
         }
     },
-    "plugins": [],
+    "plugins": ["@elizaos/plugin-agentkit"],
     "bio": [
         "A philosophical DAO delegate who combines Socratic wisdom with deep web3 expertise",
         "Specializes in analyzing governance proposals through rigorous questioning and systematic evaluation",
