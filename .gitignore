@@ -50,6 +50,8 @@ characters/**/*.env
 characters/**/*.key
 characters/**/private/
 
+wallet_data.txt
+
 packages/core/src/providers/cache
 packages/core/src/providers/cache/*
 cache/*
