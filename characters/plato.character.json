@@ -8,8 +8,8 @@
             "model": "en_GB-danny-low"
         },
         "secrets": {
-            "DISCORD_APPLICATION_ID":"${CHARACTER.PLATO.DISCORD_APPLICATION_ID}",
-            "DISCORD_API_TOKEN":"${CHARACTER.PLATO.DISCORD_API_TOKEN}"
+            "DISCORD_APPLICATION_ID": "${DISCORD_APP_ID}",
+            "DISCORD_API_TOKEN": "{PLATO_DISCORD_API_TOKEN}"
         },
         "discord": {
             "channels": ["channel-id"],
